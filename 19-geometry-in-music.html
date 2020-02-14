@@ -170,7 +170,7 @@ min7ctx.lineTo(205, 25); // back to E
 min7ctx.stroke();
 </script>
 <h4>Diminished triad</h4>
-<p>The diminished triad forms a isosceles triangle shape in any key, in this case it's E diminished triad / chord.</p>
+<p>The diminished triad forms a equilateral triangle shape in any key, in this case it's E diminished triad / chord.</p>
 <canvas id="diminished" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
@@ -200,6 +200,137 @@ dimctx.lineTo(375, 198); // G
 dimctx.lineTo(195, 375); // Bb
 dimctx.lineTo(205, 25); // back to E
 dimctx.stroke();
+</script>
+<h4>Half-diminished seventh arpeggio</h4>
+<p>The half-diminished arpeggio forms almost a diamond shape in any key, in this case it's E half-diminished triad / chord.</p>
+<canvas id="halfdiminished" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var hdimcanvas = document.getElementById('halfdiminished');
+var hdimctx = hdimcanvas.getContext('2d');
+hdimctx.beginPath();
+hdimctx.arc(200, 200, 175, 0, 2 * Math.PI);
+hdimctx.stroke();
+
+hdimctx.font = '30px Arial';
+hdimctx.fillStyle = 'black';
+hdimctx.fillText('E', 195, 35);
+hdimctx.fillText('F', 290, 70);
+hdimctx.fillText('F#', 345, 130);
+hdimctx.fillText('G', 365, 205);
+hdimctx.fillText('G#', 345, 275);
+hdimctx.fillText('A', 290, 350);
+hdimctx.fillText('Bb', 190, 385);
+hdimctx.fillText('B', 85, 350);
+hdimctx.fillText('C', 25, 275);
+hdimctx.fillText('C#', 15, 205);
+hdimctx.fillText('D', 35, 130);
+hdimctx.fillText('D#', 85, 70);
+
+hdimctx.moveTo(205, 25); // E
+hdimctx.lineTo(375, 198); // G
+hdimctx.lineTo(195, 375); // Bb
+hdimctx.lineTo(40, 130); // D
+hdimctx.lineTo(205, 25); // back to E
+hdimctx.stroke();
+</script>
+<h4>Diminished seventh arpeggio</h4>
+<p>The diminished arpeggio forms a diamond shape in any key, in this case it's E diminished triad / chord.</p>
+<canvas id="diminished7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var dim7canvas = document.getElementById('diminished7');
+var dim7ctx = dim7canvas.getContext('2d');
+dim7ctx.beginPath();
+dim7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+dim7ctx.stroke();
+
+dim7ctx.font = '30px Arial';
+dim7ctx.fillStyle = 'black';
+dim7ctx.fillText('E', 195, 35);
+dim7ctx.fillText('F', 290, 70);
+dim7ctx.fillText('F#', 345, 130);
+dim7ctx.fillText('G', 365, 205);
+dim7ctx.fillText('G#', 345, 275);
+dim7ctx.fillText('A', 290, 350);
+dim7ctx.fillText('Bb', 190, 385);
+dim7ctx.fillText('B', 85, 350);
+dim7ctx.fillText('C', 25, 275);
+dim7ctx.fillText('Db', 15, 205);
+dim7ctx.fillText('D', 35, 130);
+dim7ctx.fillText('D#', 85, 70);
+
+dim7ctx.moveTo(205, 25); // E
+dim7ctx.lineTo(375, 198); // G
+dim7ctx.lineTo(195, 375); // Bb
+dim7ctx.lineTo(25, 205); // Db
+dim7ctx.lineTo(205, 25); // back to E
+dim7ctx.stroke();
+</script>
+<h4>Augmented triad</h4>
+<p>The augmented triad forms a equilateral triangle shape in any key, in this case it's E augmented triad / chord.</p>
+<canvas id="augmented" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var augcanvas = document.getElementById('augmented');
+var augctx = augcanvas.getContext('2d');
+augctx.beginPath();
+augctx.arc(200, 200, 175, 0, 2 * Math.PI);
+augctx.stroke();
+
+augctx.font = '30px Arial';
+augctx.fillStyle = 'black';
+augctx.fillText('E', 195, 35);
+augctx.fillText('F', 290, 70);
+augctx.fillText('F#', 345, 130);
+augctx.fillText('G', 365, 205);
+augctx.fillText('G#', 345, 275);
+augctx.fillText('A', 290, 350);
+augctx.fillText('Bb', 190, 385);
+augctx.fillText('B', 85, 350);
+augctx.fillText('C', 25, 275);
+augctx.fillText('Db', 15, 205);
+augctx.fillText('D', 35, 130);
+augctx.fillText('D#', 85, 70);
+
+augctx.moveTo(205, 25); // E
+augctx.lineTo(365, 265); // G#
+augctx.lineTo(35, 265); // C
+augctx.lineTo(205, 25); // back to E
+augctx.stroke();
+</script>
+<h4>Augmented seventh arpeggio</h4>
+<p>The augmented seventh arpeggio forms a irregular trapezoid shape in any key, in this case it's E augmented arepggio / chord.</p>
+<canvas id="augmented7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var aug7canvas = document.getElementById('augmented7');
+var aug7ctx = aug7canvas.getContext('2d');
+aug7ctx.beginPath();
+aug7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+aug7ctx.stroke();
+
+aug7ctx.font = '30px Arial';
+aug7ctx.fillStyle = 'black';
+aug7ctx.fillText('E', 195, 35);
+aug7ctx.fillText('F', 290, 70);
+aug7ctx.fillText('F#', 345, 130);
+aug7ctx.fillText('G', 365, 205);
+aug7ctx.fillText('G#', 345, 275);
+aug7ctx.fillText('A', 290, 350);
+aug7ctx.fillText('Bb', 190, 385);
+aug7ctx.fillText('B', 85, 350);
+aug7ctx.fillText('C', 25, 275);
+aug7ctx.fillText('Db', 15, 205);
+aug7ctx.fillText('D', 35, 130);
+aug7ctx.fillText('D#', 85, 70);
+
+aug7ctx.moveTo(205, 25); // E
+aug7ctx.lineTo(365, 263); // G#
+aug7ctx.lineTo(37, 263); // C
+aug7ctx.lineTo(40, 130); // D
+aug7ctx.lineTo(205, 25); // back to E
+aug7ctx.stroke();
 </script>
 </body>
 </html>
