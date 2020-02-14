@@ -7,7 +7,7 @@
 <h2>19 - Geometry in music</h2>
 <p>In this chapter, we will discover that music and its elements have shapes and thus contains geometry.</p>
 <h4>Major triad</h4>
-<p>The major triad forms a triangle shape in any key, in this case it's E major triad / chord</p>
+<p>The major triad forms a triangle shape in any key, in this case it's E major triad / chord.</p>
 <canvas id="major" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
@@ -43,98 +43,163 @@ majctx.stroke();
 <canvas id="major7" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
-var majcanvas = document.getElementById('major7');
-var majctx = majcanvas.getContext('2d');
-majctx.beginPath();
-majctx.arc(200, 200, 175, 0, 2 * Math.PI);
-majctx.stroke();
+var maj7canvas = document.getElementById('major7');
+var maj7ctx = maj7canvas.getContext('2d');
+maj7ctx.beginPath();
+maj7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+maj7ctx.stroke();
 
-majctx.font = '30px Arial';
-majctx.fillStyle = 'black';
-majctx.fillText('E', 195, 35);
-majctx.fillText('F', 290, 70);
-majctx.fillText('F#', 345, 130);
-majctx.fillText('G', 365, 205);
-majctx.fillText('G#', 345, 275);
-majctx.fillText('A', 290, 350);
-majctx.fillText('A#', 190, 385);
-majctx.fillText('B', 85, 350);
-majctx.fillText('C', 25, 275);
-majctx.fillText('C#', 15, 205);
-majctx.fillText('D', 35, 130);
-majctx.fillText('D#', 85, 70);
+maj7ctx.font = '30px Arial';
+maj7ctx.fillStyle = 'black';
+maj7ctx.fillText('E', 195, 35);
+maj7ctx.fillText('F', 290, 70);
+maj7ctx.fillText('F#', 345, 130);
+maj7ctx.fillText('G', 365, 205);
+maj7ctx.fillText('G#', 345, 275);
+maj7ctx.fillText('A', 290, 350);
+maj7ctx.fillText('A#', 190, 385);
+maj7ctx.fillText('B', 85, 350);
+maj7ctx.fillText('C', 25, 275);
+maj7ctx.fillText('C#', 15, 205);
+maj7ctx.fillText('D', 35, 130);
+maj7ctx.fillText('D#', 85, 70);
 
-majctx.moveTo(205, 25); // E
-majctx.lineTo(360, 265); // G#
-majctx.lineTo(95, 340); // B
-majctx.lineTo(90, 65); // D#
-majctx.lineTo(205, 25); // back to E
-majctx.stroke();
+maj7ctx.moveTo(205, 25); // E
+maj7ctx.lineTo(360, 265); // G#
+maj7ctx.lineTo(95, 340); // B
+maj7ctx.lineTo(90, 65); // D#
+maj7ctx.lineTo(205, 25); // back to E
+maj7ctx.stroke();
+</script>
+<h4>Dominant seventh arpeggio</h4>
+<p>The dominant seventh arpeggio / chord forms a trapezoid shape in any key, in this case it's E dominant seventh arpeggio / chord.</p>
+<canvas id="dominant7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var dom7canvas = document.getElementById('dominant7');
+var dom7ctx = dom7canvas.getContext('2d');
+dom7ctx.beginPath();
+dom7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+dom7ctx.stroke();
+
+dom7ctx.font = '30px Arial';
+dom7ctx.fillStyle = 'black';
+dom7ctx.fillText('E', 195, 35);
+dom7ctx.fillText('F', 290, 70);
+dom7ctx.fillText('F#', 345, 130);
+dom7ctx.fillText('G', 365, 205);
+dom7ctx.fillText('G#', 345, 275);
+dom7ctx.fillText('A', 290, 350);
+dom7ctx.fillText('A#', 190, 385);
+dom7ctx.fillText('B', 85, 350);
+dom7ctx.fillText('C', 25, 275);
+dom7ctx.fillText('C#', 15, 205);
+dom7ctx.fillText('D', 35, 130);
+dom7ctx.fillText('D#', 85, 70);
+
+dom7ctx.moveTo(205, 25); // E
+dom7ctx.lineTo(360, 265); // G#
+dom7ctx.lineTo(95, 340); // B
+dom7ctx.lineTo(45, 120); // D
+dom7ctx.lineTo(205, 25); // back to E
+dom7ctx.stroke();
 </script>
 <h4>Minor triad</h4>
-<p>The minor triad forms a isosceles triangle shape in any key, in this case it's E minor triad / chord</p>
+<p>The minor triad forms a isosceles triangle shape in any key, in this case it's E minor triad / chord.</p>
 <canvas id="minor" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
-var majcanvas = document.getElementById('minor');
-var majctx = majcanvas.getContext('2d');
-majctx.beginPath();
-majctx.arc(200, 200, 175, 0, 2 * Math.PI);
-majctx.stroke();
+var mincanvas = document.getElementById('minor');
+var minctx = mincanvas.getContext('2d');
+minctx.beginPath();
+minctx.arc(200, 200, 175, 0, 2 * Math.PI);
+minctx.stroke();
 
-majctx.font = '30px Arial';
-majctx.fillStyle = 'black';
-majctx.fillText('E', 195, 35);
-majctx.fillText('F', 290, 70);
-majctx.fillText('F#', 345, 130);
-majctx.fillText('G', 365, 205);
-majctx.fillText('G#', 345, 275);
-majctx.fillText('A', 290, 350);
-majctx.fillText('A#', 190, 385);
-majctx.fillText('B', 85, 350);
-majctx.fillText('C', 25, 275);
-majctx.fillText('C#', 15, 205);
-majctx.fillText('D', 35, 130);
-majctx.fillText('D#', 85, 70);
+minctx.font = '30px Arial';
+minctx.fillStyle = 'black';
+minctx.fillText('E', 195, 35);
+minctx.fillText('F', 290, 70);
+minctx.fillText('F#', 345, 130);
+minctx.fillText('G', 365, 205);
+minctx.fillText('G#', 345, 275);
+minctx.fillText('A', 290, 350);
+minctx.fillText('A#', 190, 385);
+minctx.fillText('B', 85, 350);
+minctx.fillText('C', 25, 275);
+minctx.fillText('C#', 15, 205);
+minctx.fillText('D', 35, 130);
+minctx.fillText('D#', 85, 70);
 
-majctx.moveTo(205, 25); // E
-majctx.lineTo(375, 198); // G
-majctx.lineTo(95, 340); // B
-majctx.lineTo(205, 25); // back to E
-majctx.stroke();
+minctx.moveTo(205, 25); // E
+minctx.lineTo(375, 198); // G
+minctx.lineTo(95, 340); // B
+minctx.lineTo(205, 25); // back to E
+minctx.stroke();
 </script>
 <h4>Minor seventh arpeggio</h4>
-<p>The minor seventh arpeggio forms a isosceles trapezoid in any key, in this cas it's E major seventh arpeggio / chord.</p>
+<p>The minor seventh arpeggio forms a isosceles trapezoid in any key, in this cas it's E minor seventh arpeggio / chord.</p>
 <canvas id="minor7" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
-var majcanvas = document.getElementById('minor7');
-var majctx = majcanvas.getContext('2d');
-majctx.beginPath();
-majctx.arc(200, 200, 175, 0, 2 * Math.PI);
-majctx.stroke();
+var min7canvas = document.getElementById('minor7');
+var min7ctx = min7canvas.getContext('2d');
+min7ctx.beginPath();
+min7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+min7ctx.stroke();
 
-majctx.font = '30px Arial';
-majctx.fillStyle = 'black';
-majctx.fillText('E', 195, 35);
-majctx.fillText('F', 290, 70);
-majctx.fillText('F#', 345, 130);
-majctx.fillText('G', 365, 205);
-majctx.fillText('G#', 345, 275);
-majctx.fillText('A', 290, 350);
-majctx.fillText('A#', 190, 385);
-majctx.fillText('B', 85, 350);
-majctx.fillText('C', 25, 275);
-majctx.fillText('C#', 15, 205);
-majctx.fillText('D', 35, 130);
-majctx.fillText('D#', 85, 70);
+min7ctx.font = '30px Arial';
+min7ctx.fillStyle = 'black';
+min7ctx.fillText('E', 195, 35);
+min7ctx.fillText('F', 290, 70);
+min7ctx.fillText('F#', 345, 130);
+min7ctx.fillText('G', 365, 205);
+min7ctx.fillText('G#', 345, 275);
+min7ctx.fillText('A', 290, 350);
+min7ctx.fillText('A#', 190, 385);
+min7ctx.fillText('B', 85, 350);
+min7ctx.fillText('C', 25, 275);
+min7ctx.fillText('C#', 15, 205);
+min7ctx.fillText('D', 35, 130);
+min7ctx.fillText('D#', 85, 70);
 
-majctx.moveTo(205, 25); // E
-majctx.lineTo(375, 198); // G
-majctx.lineTo(95, 340); // B
-majctx.lineTo(40, 130); // D
-majctx.lineTo(205, 25); // back to E
-majctx.stroke();
+min7ctx.moveTo(205, 25); // E
+min7ctx.lineTo(375, 198); // G
+min7ctx.lineTo(95, 340); // B
+min7ctx.lineTo(45, 120); // D
+min7ctx.lineTo(205, 25); // back to E
+min7ctx.stroke();
+</script>
+<h4>Diminished triad</h4>
+<p>The diminished triad forms a isosceles triangle shape in any key, in this case it's E diminished triad / chord.</p>
+<canvas id="diminished" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var dimcanvas = document.getElementById('diminished');
+var dimctx = dimcanvas.getContext('2d');
+dimctx.beginPath();
+dimctx.arc(200, 200, 175, 0, 2 * Math.PI);
+dimctx.stroke();
+
+dimctx.font = '30px Arial';
+dimctx.fillStyle = 'black';
+dimctx.fillText('E', 195, 35);
+dimctx.fillText('F', 290, 70);
+dimctx.fillText('F#', 345, 130);
+dimctx.fillText('G', 365, 205);
+dimctx.fillText('G#', 345, 275);
+dimctx.fillText('A', 290, 350);
+dimctx.fillText('Bb', 190, 385);
+dimctx.fillText('B', 85, 350);
+dimctx.fillText('C', 25, 275);
+dimctx.fillText('C#', 15, 205);
+dimctx.fillText('D', 35, 130);
+dimctx.fillText('D#', 85, 70);
+
+dimctx.moveTo(205, 25); // E
+dimctx.lineTo(375, 198); // G
+dimctx.lineTo(195, 375); // Bb
+dimctx.lineTo(205, 25); // back to E
+dimctx.stroke();
 </script>
 </body>
 </html>
