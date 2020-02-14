@@ -71,6 +71,71 @@ majctx.lineTo(90, 65); // D#
 majctx.lineTo(205, 25); // back to E
 majctx.stroke();
 </script>
+<h4>Minor triad</h4>
+<p>The minor triad forms a isosceles triangle shape in any key, in this case it's E minor triad / chord</p>
+<canvas id="minor" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var majcanvas = document.getElementById('minor');
+var majctx = majcanvas.getContext('2d');
+majctx.beginPath();
+majctx.arc(200, 200, 175, 0, 2 * Math.PI);
+majctx.stroke();
+
+majctx.font = '30px Arial';
+majctx.fillStyle = 'black';
+majctx.fillText('E', 195, 35);
+majctx.fillText('F', 290, 70);
+majctx.fillText('F#', 345, 130);
+majctx.fillText('G', 365, 205);
+majctx.fillText('G#', 345, 275);
+majctx.fillText('A', 290, 350);
+majctx.fillText('A#', 190, 385);
+majctx.fillText('B', 85, 350);
+majctx.fillText('C', 25, 275);
+majctx.fillText('C#', 15, 205);
+majctx.fillText('D', 35, 130);
+majctx.fillText('D#', 85, 70);
+
+majctx.moveTo(205, 25); // E
+majctx.lineTo(375, 198); // G
+majctx.lineTo(95, 340); // B
+majctx.lineTo(205, 25); // back to E
+majctx.stroke();
+</script>
+<h4>Minor seventh arpeggio</h4>
+<p>The minor seventh arpeggio forms a isosceles trapezoid in any key, in this cas it's E major seventh arpeggio / chord.</p>
+<canvas id="minor7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var majcanvas = document.getElementById('minor7');
+var majctx = majcanvas.getContext('2d');
+majctx.beginPath();
+majctx.arc(200, 200, 175, 0, 2 * Math.PI);
+majctx.stroke();
+
+majctx.font = '30px Arial';
+majctx.fillStyle = 'black';
+majctx.fillText('E', 195, 35);
+majctx.fillText('F', 290, 70);
+majctx.fillText('F#', 345, 130);
+majctx.fillText('G', 365, 205);
+majctx.fillText('G#', 345, 275);
+majctx.fillText('A', 290, 350);
+majctx.fillText('A#', 190, 385);
+majctx.fillText('B', 85, 350);
+majctx.fillText('C', 25, 275);
+majctx.fillText('C#', 15, 205);
+majctx.fillText('D', 35, 130);
+majctx.fillText('D#', 85, 70);
+
+majctx.moveTo(205, 25); // E
+majctx.lineTo(375, 198); // G
+majctx.lineTo(95, 340); // B
+majctx.lineTo(40, 130); // D
+majctx.lineTo(205, 25); // back to E
+majctx.stroke();
+</script>
 </body>
 </html>
 
