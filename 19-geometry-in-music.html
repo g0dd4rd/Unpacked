@@ -5,9 +5,9 @@
 </head>
 <body>
 <h2>19 - Geometry in music</h2>
-<p>In this chapter, we will disocver that music and its elements have shapes and thus contains geometry.</p>
-<h4>Major triad and arpeggio</h4>
-<p>The major triad in any key forms a triangle shape, in this case it's E major triad.</p>
+<p>In this chapter, we will discover that music and its elements have shapes and thus contains geometry.</p>
+<h4>Major triad</h4>
+<p>The major triad forms a triangle shape in any key, in this case it's E major triad / chord</p>
 <canvas id="major" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
@@ -35,6 +35,39 @@ majctx.fillText('D#', 85, 70);
 majctx.moveTo(205, 25); // E
 majctx.lineTo(360, 265); // G#
 majctx.lineTo(95, 340); // B
+majctx.lineTo(205, 25); // back to E
+majctx.stroke();
+</script>
+<h4>Major seventh arpeggio</h4>
+<p>The major seventh arpeggio forms a trapezoid in any key, in this cas it's E major seventh arpeggio / chord.</p>
+<canvas id="major7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var majcanvas = document.getElementById('major7');
+var majctx = majcanvas.getContext('2d');
+majctx.beginPath();
+majctx.arc(200, 200, 175, 0, 2 * Math.PI);
+majctx.stroke();
+
+majctx.font = '30px Arial';
+majctx.fillStyle = 'black';
+majctx.fillText('E', 195, 35);
+majctx.fillText('F', 290, 70);
+majctx.fillText('F#', 345, 130);
+majctx.fillText('G', 365, 205);
+majctx.fillText('G#', 345, 275);
+majctx.fillText('A', 290, 350);
+majctx.fillText('A#', 190, 385);
+majctx.fillText('B', 85, 350);
+majctx.fillText('C', 25, 275);
+majctx.fillText('C#', 15, 205);
+majctx.fillText('D', 35, 130);
+majctx.fillText('D#', 85, 70);
+
+majctx.moveTo(205, 25); // E
+majctx.lineTo(360, 265); // G#
+majctx.lineTo(95, 340); // B
+majctx.lineTo(90, 65); // D#
 majctx.lineTo(205, 25); // back to E
 majctx.stroke();
 </script>
