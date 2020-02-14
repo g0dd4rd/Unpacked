@@ -365,6 +365,55 @@ minmaj7ctx.lineTo(90, 65); // D#
 minmaj7ctx.lineTo(205, 25); // back to E
 minmaj7ctx.stroke();
 </script>
+<h4>ii-V-I</h4>
+<p>This is how a regular ii-V-I chord progression looks like, in the key of E natural major.</p>
+<canvas id="251" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var a251canvas = document.getElementById('251');
+var a251ctx = a251canvas.getContext('2d');
+a251ctx.beginPath();
+a251ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+a251ctx.stroke();
+
+a251ctx.font = '30px Arial';
+a251ctx.fillStyle = 'black';
+a251ctx.fillText('E', 195, 35);
+a251ctx.fillText('F', 290, 70);
+a251ctx.fillText('F#', 345, 130);
+a251ctx.fillText('G', 365, 205);
+a251ctx.fillText('G#', 345, 275);
+a251ctx.fillText('A', 290, 350);
+a251ctx.fillText('Bb', 190, 385);
+a251ctx.fillText('B', 85, 350);
+a251ctx.fillText('C', 25, 275);
+a251ctx.fillText('C#', 15, 205);
+a251ctx.fillText('D', 35, 130);
+a251ctx.fillText('D#', 85, 70);
+//a251ctx.endPath()
+
+// a251ctx.strokeStyle = 'orange'; - make this work
+a251ctx.moveTo(355, 120); // F#
+a251ctx.lineTo(295, 340); // A
+a251ctx.lineTo(25, 200); // C#
+a251ctx.lineTo(205, 25); // E
+a251ctx.lineTo(355, 120); // back to F#
+a251ctx.stroke();
+
+a251ctx.moveTo(95, 340); // B
+a251ctx.lineTo(90, 65); // D#
+a251ctx.lineTo(355, 120); // F#
+a251ctx.lineTo(295, 340); // A
+a251ctx.lineTo(95, 340); // back to B
+a251ctx.stroke();
+
+a251ctx.moveTo(205, 25); // E
+a251ctx.lineTo(360, 265); // G#
+a251ctx.lineTo(95, 340); // B
+a251ctx.lineTo(90, 65); // D#
+a251ctx.lineTo(205, 25); // back to E
+a251ctx.stroke();
+</script>
 </body>
 </html>
 
