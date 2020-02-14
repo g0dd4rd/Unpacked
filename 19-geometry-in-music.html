@@ -460,7 +460,40 @@ a251ctx.lineTo(90, 65); // D#
 a251ctx.lineTo(205, 25); // back to E
 a251ctx.stroke();
 </script>
+<h4>The standard tuning</h4>
+<p>The standard tuning in any key forms a pentagram.</p>
+<canvas id="standard" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var scanvas = document.getElementById('standard');
+var sctx = scanvas.getContext('2d');
+sctx.beginPath();
+sctx.arc(200, 200, 175, 0, 2 * Math.PI);
+sctx.stroke();
 
+sctx.font = '30px Arial';
+sctx.fillStyle = 'black';
+sctx.fillText('E', 195, 35);
+sctx.fillText('F', 290, 70);
+sctx.fillText('F#', 345, 130);
+sctx.fillText('G', 365, 205);
+sctx.fillText('G#', 345, 275);
+sctx.fillText('A', 290, 350);
+sctx.fillText('Bb', 190, 385);
+sctx.fillText('B', 85, 350);
+sctx.fillText('C', 25, 275);
+sctx.fillText('Db', 15, 205);
+sctx.fillText('D', 35, 130);
+sctx.fillText('D#', 85, 70);
+
+sctx.moveTo(205, 25); // E
+sctx.lineTo(295, 340); // A
+sctx.lineTo(40, 130); // D
+sctx.lineTo(375, 198); // g
+sctx.lineTo(95, 340); // b
+sctx.lineTo(205, 25); // back to E
+sctx.stroke();
+</script>
 </body>
 </html>
 
