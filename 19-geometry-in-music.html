@@ -332,6 +332,39 @@ aug7ctx.lineTo(40, 130); // D
 aug7ctx.lineTo(205, 25); // back to E
 aug7ctx.stroke();
 </script>
+<h4>Minor-major seventh arpeggio</h4>
+<p>The Minor-major seventh arpeggio forms a irregular trapezoid shape in any key, in this case it's E Minor-major arepggio / chord.</p>
+<canvas id="minmaj7" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var minmaj7canvas = document.getElementById('minmaj7');
+var minmaj7ctx = minmaj7canvas.getContext('2d');
+minmaj7ctx.beginPath();
+minmaj7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
+minmaj7ctx.stroke();
+
+minmaj7ctx.font = '30px Arial';
+minmaj7ctx.fillStyle = 'black';
+minmaj7ctx.fillText('E', 195, 35);
+minmaj7ctx.fillText('F', 290, 70);
+minmaj7ctx.fillText('F#', 345, 130);
+minmaj7ctx.fillText('G', 365, 205);
+minmaj7ctx.fillText('G#', 345, 275);
+minmaj7ctx.fillText('A', 290, 350);
+minmaj7ctx.fillText('Bb', 190, 385);
+minmaj7ctx.fillText('B', 85, 350);
+minmaj7ctx.fillText('C', 25, 275);
+minmaj7ctx.fillText('Db', 15, 205);
+minmaj7ctx.fillText('D', 35, 130);
+minmaj7ctx.fillText('D#', 85, 70);
+
+minmaj7ctx.moveTo(205, 25); // E
+minmaj7ctx.lineTo(375, 198); // G
+minmaj7ctx.lineTo(95, 340); // B
+minmaj7ctx.lineTo(90, 65); // D#
+minmaj7ctx.lineTo(205, 25); // back to E
+minmaj7ctx.stroke();
+</script>
 </body>
 </html>
 
