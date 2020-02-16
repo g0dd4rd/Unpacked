@@ -642,6 +642,114 @@ sctx.lineTo(90, 65); // D#
 sctx.lineTo(205, 25); // back to E
 sctx.stroke();
 </script>
+<h4>Myxolydian mode</h4>
+<p>The myxolydian mode has a shape of a irregular septagon, that is actually the same as ionian mode in the same key, just rotated.</p>
+<canvas id="mixolydians" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var scanvas = document.getElementById('mixolydians');
+var sctx = scanvas.getContext('2d');
+sctx.beginPath();
+sctx.arc(200, 200, 175, 0, 2 * Math.PI);
+sctx.stroke();
+
+sctx.font = '30px Arial';
+sctx.fillStyle = 'black';
+sctx.fillText('E', 195, 35);
+sctx.fillText('F', 290, 70);
+sctx.fillText('F#', 345, 130);
+sctx.fillText('G', 365, 205);
+sctx.fillText('G#', 345, 275);
+sctx.fillText('A', 290, 350);
+sctx.fillText('A#', 190, 385);
+sctx.fillText('B', 85, 350);
+sctx.fillText('C', 25, 275);
+sctx.fillText('C#', 15, 205);
+sctx.fillText('D', 35, 130);
+sctx.fillText('D#', 85, 70);
+
+sctx.moveTo(205, 25); // E
+sctx.lineTo(355, 120); // F#
+sctx.lineTo(360, 265); // G#
+sctx.lineTo(295, 340); // A
+sctx.lineTo(95, 340); // B
+sctx.lineTo(25, 200); // C#
+sctx.lineTo(40, 130); // D
+sctx.lineTo(205, 25); // back to E
+sctx.stroke();
+</script>
+<h4>Aeolian mode</h4>
+<p>The aeolian mode has a shape of a irregular septagon, that is actually the same as myxolydian mode in the same key, but vertically mirrored.</p>
+<canvas id="aeolians" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var scanvas = document.getElementById('aeolians');
+var sctx = scanvas.getContext('2d');
+sctx.beginPath();
+sctx.arc(200, 200, 175, 0, 2 * Math.PI);
+sctx.stroke();
+
+sctx.font = '30px Arial';
+sctx.fillStyle = 'black';
+sctx.fillText('E', 195, 35);
+sctx.fillText('F', 290, 70);
+sctx.fillText('F#', 345, 130);
+sctx.fillText('G', 365, 205);
+sctx.fillText('G#', 345, 275);
+sctx.fillText('A', 290, 350);
+sctx.fillText('A#', 190, 385);
+sctx.fillText('B', 85, 350);
+sctx.fillText('C', 25, 275);
+sctx.fillText('C#', 15, 205);
+sctx.fillText('D', 35, 130);
+sctx.fillText('D#', 85, 70);
+
+sctx.moveTo(205, 25); // E
+sctx.lineTo(355, 120); // F#
+sctx.lineTo(375, 198); // G
+sctx.lineTo(295, 340); // A
+sctx.lineTo(95, 340); // B
+sctx.lineTo(37, 263); // C
+sctx.lineTo(40, 130); // D
+sctx.lineTo(205, 25); // back to E
+sctx.stroke();
+</script>
+<h4>Locrian mode</h4>
+<p>The locrian mode has a shape of a irregular septagon, that is actually the same as lydian mode in the same key, but vertically mirrored.</p>
+<canvas id="locrians" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var scanvas = document.getElementById('locrians');
+var sctx = scanvas.getContext('2d');
+sctx.beginPath();
+sctx.arc(200, 200, 175, 0, 2 * Math.PI);
+sctx.stroke();
+
+sctx.font = '30px Arial';
+sctx.fillStyle = 'black';
+sctx.fillText('E', 195, 35);
+sctx.fillText('F', 290, 70);
+sctx.fillText('F#', 345, 130);
+sctx.fillText('G', 365, 205);
+sctx.fillText('G#', 345, 275);
+sctx.fillText('A', 290, 350);
+sctx.fillText('A#', 190, 385);
+sctx.fillText('B', 85, 350);
+sctx.fillText('C', 25, 275);
+sctx.fillText('C#', 15, 205);
+sctx.fillText('D', 35, 130);
+sctx.fillText('D#', 85, 70);
+
+sctx.moveTo(205, 25); // E
+sctx.lineTo(300, 58); // F
+sctx.lineTo(375, 198); // G
+sctx.lineTo(295, 340); // A
+sctx.lineTo(195, 375); // Bb
+sctx.lineTo(37, 263); // C
+sctx.lineTo(40, 130); // D
+sctx.lineTo(205, 25); // back to E
+sctx.stroke();
+</script>
 </body>
 </html>
 
