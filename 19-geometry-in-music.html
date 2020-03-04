@@ -9,6 +9,7 @@
 <p>In this chapter, we will discover that music and its elements have shapes and thus contains geometry.</p>
 <h3>Intervals, chords, triads and arpeggios shapes</h3>
 <h4>Minor second interval</h4>
+<p>Minor second interval forms a regular dodecadon shape.</p>
 <canvas id="min2nd" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
@@ -36,6 +37,66 @@ min2ndctx.fillText('D#', 85, 70);
 min2ndctx.moveTo(205, 25); // E
 min2ndctx.lineTo(295, 55); // F
 min2ndctx.stroke();
+</script>
+<h4>Major second interval</h4>
+<p>Major second interval forms a regular hexagon shape.</p>
+<canvas id="maj2nd" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var maj2ndcanvas = document.getElementById('maj2nd');
+var maj2ndctx = maj2ndcanvas.getContext('2d');
+maj2ndctx.beginPath();
+maj2ndctx.arc(200, 200, 175, 0, 2 * Math.PI);
+maj2ndctx.stroke();
+
+maj2ndctx.font = '30px Arial';
+maj2ndctx.fillStyle = 'black';
+maj2ndctx.fillText('E', 195, 35);
+maj2ndctx.fillText('F', 290, 70);
+maj2ndctx.fillText('F#', 345, 130);
+maj2ndctx.fillText('G', 365, 205);
+maj2ndctx.fillText('G#', 345, 275);
+maj2ndctx.fillText('A', 290, 350);
+maj2ndctx.fillText('A#', 190, 385);
+maj2ndctx.fillText('B', 85, 350);
+maj2ndctx.fillText('C', 25, 275);
+maj2ndctx.fillText('C#', 15, 205);
+maj2ndctx.fillText('D', 35, 130);
+maj2ndctx.fillText('D#', 85, 70);
+
+maj2ndctx.moveTo(205, 25); // E
+maj2ndctx.lineTo(355, 120); // F#
+maj2ndctx.stroke();
+</script>
+<h4>Minor third interval</h4>
+<p>Minor third interval forms a diamond shape, same as diminished arpeggio.</p>
+<canvas id="min3rd" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var min3rdcanvas = document.getElementById('min3rd');
+var min3rdctx = min3rdcanvas.getContext('2d');
+min3rdctx.beginPath();
+min3rdctx.arc(200, 200, 175, 0, 2 * Math.PI);
+min3rdctx.stroke();
+
+min3rdctx.font = '30px Arial';
+min3rdctx.fillStyle = 'black';
+min3rdctx.fillText('E', 195, 35);
+min3rdctx.fillText('F', 290, 70);
+min3rdctx.fillText('F#', 345, 130);
+min3rdctx.fillText('G', 365, 205);
+min3rdctx.fillText('G#', 345, 275);
+min3rdctx.fillText('A', 290, 350);
+min3rdctx.fillText('A#', 190, 385);
+min3rdctx.fillText('B', 85, 350);
+min3rdctx.fillText('C', 25, 275);
+min3rdctx.fillText('C#', 15, 205);
+min3rdctx.fillText('D', 35, 130);
+min3rdctx.fillText('D#', 85, 70);
+
+min3rdctx.moveTo(205, 25); // E
+min3rdctx.lineTo(375, 198); // G
+min3rdctx.stroke();
 </script>
 <h4>Major seventh arpeggio</h4>
 <p>The major seventh arpeggio forms a trapezoid in any key, in this cas it's E major seventh arpeggio / chord.</p>
