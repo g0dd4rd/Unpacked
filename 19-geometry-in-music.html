@@ -128,6 +128,36 @@ maj3rdctx.moveTo(205, 25); // E
 maj3rdctx.lineTo(360, 265); // G#
 maj3rdctx.stroke();
 </script>
+<h4>Fourth interval</h4>
+<p>Fourth interval forms a triangle.</p>
+<canvas id="perf4th" width="400" height="400"  style="border:1px solid #000000;">
+</canvas>
+<script>
+var perf4thcanvas = document.getElementById('perf4th');
+var perf4thctx = perf4thcanvas.getContext('2d');
+perf4thctx.beginPath();
+perf4thctx.arc(200, 200, 175, 0, 2 * Math.PI);
+perf4thctx.stroke();
+
+perf4thctx.font = '30px Arial';
+perf4thctx.fillStyle = 'black';
+perf4thctx.fillText('E', 195, 35);
+perf4thctx.fillText('F', 290, 70);
+perf4thctx.fillText('F#', 345, 130);
+perf4thctx.fillText('G', 365, 205);
+perf4thctx.fillText('G#', 345, 275);
+perf4thctx.fillText('A', 290, 350);
+perf4thctx.fillText('A#', 190, 385);
+perf4thctx.fillText('B', 85, 350);
+perf4thctx.fillText('C', 25, 275);
+perf4thctx.fillText('C#', 15, 205);
+perf4thctx.fillText('D', 35, 130);
+perf4thctx.fillText('D#', 85, 70);
+
+perf4thctx.moveTo(205, 25); // E
+perf4thctx.lineTo(295, 340); // A
+perf4thctx.stroke();
+</script>
 <h4>Major triad</h4>
 <p>The major triad forms a triangle shape in any key, in this case it's E major triad / chord.</p>
 <canvas id="major" width="400" height="400"  style="border:1px solid #000000;">
