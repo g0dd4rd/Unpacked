@@ -98,38 +98,35 @@ min3rdctx.moveTo(205, 25); // E
 min3rdctx.lineTo(375, 198); // G
 min3rdctx.stroke();
 </script>
-<h4>Major seventh arpeggio</h4>
-<p>The major seventh arpeggio forms a trapezoid in any key, in this cas it's E major seventh arpeggio / chord.</p>
-<canvas id="major7" width="400" height="400"  style="border:1px solid #000000;">
+<h4>Major third interval</h4>
+<p>Major third interval forms a equilateral triangle.</p>
+<canvas id="maj3rd" width="400" height="400"  style="border:1px solid #000000;">
 </canvas>
 <script>
-var maj7canvas = document.getElementById('major7');
-var maj7ctx = maj7canvas.getContext('2d');
-maj7ctx.beginPath();
-maj7ctx.arc(200, 200, 175, 0, 2 * Math.PI);
-maj7ctx.stroke();
+var maj3rdcanvas = document.getElementById('maj3rd');
+var maj3rdctx = maj3rdcanvas.getContext('2d');
+maj3rdctx.beginPath();
+maj3rdctx.arc(200, 200, 175, 0, 2 * Math.PI);
+maj3rdctx.stroke();
 
-maj7ctx.font = '30px Arial';
-maj7ctx.fillStyle = 'black';
-maj7ctx.fillText('E', 195, 35);
-maj7ctx.fillText('F', 290, 70);
-maj7ctx.fillText('F#', 345, 130);
-maj7ctx.fillText('G', 365, 205);
-maj7ctx.fillText('G#', 345, 275);
-maj7ctx.fillText('A', 290, 350);
-maj7ctx.fillText('A#', 190, 385);
-maj7ctx.fillText('B', 85, 350);
-maj7ctx.fillText('C', 25, 275);
-maj7ctx.fillText('C#', 15, 205);
-maj7ctx.fillText('D', 35, 130);
-maj7ctx.fillText('D#', 85, 70);
+maj3rdctx.font = '30px Arial';
+maj3rdctx.fillStyle = 'black';
+maj3rdctx.fillText('E', 195, 35);
+maj3rdctx.fillText('F', 290, 70);
+maj3rdctx.fillText('F#', 345, 130);
+maj3rdctx.fillText('G', 365, 205);
+maj3rdctx.fillText('G#', 345, 275);
+maj3rdctx.fillText('A', 290, 350);
+maj3rdctx.fillText('A#', 190, 385);
+maj3rdctx.fillText('B', 85, 350);
+maj3rdctx.fillText('C', 25, 275);
+maj3rdctx.fillText('C#', 15, 205);
+maj3rdctx.fillText('D', 35, 130);
+maj3rdctx.fillText('D#', 85, 70);
 
-maj7ctx.moveTo(205, 25); // E
-maj7ctx.lineTo(360, 265); // G#
-maj7ctx.lineTo(95, 340); // B
-maj7ctx.lineTo(90, 65); // D#
-maj7ctx.lineTo(205, 25); // back to E
-maj7ctx.stroke();
+maj3rdctx.moveTo(205, 25); // E
+maj3rdctx.lineTo(360, 265); // G#
+maj3rdctx.stroke();
 </script>
 <h4>Major triad</h4>
 <p>The major triad forms a triangle shape in any key, in this case it's E major triad / chord.</p>
